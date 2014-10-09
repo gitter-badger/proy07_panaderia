@@ -2,7 +2,7 @@ doctype
 html(lang="es")
 head 
 	meta(charset="UTF-8")
-	meta(name="description" content="Este es el sitio web de la gran pasteleria pancito donde panchito")
+	meta(name="description" content="Este es el sitio web de la gran pasteleria Pancito donde Panchito")
 	meta(name="keywords" content="pasteleria, panaderia, pasteles")
 	title Pancito donde Panchito
 	//link(rel="stylesheet" href="css/normalize.css")
@@ -13,51 +13,52 @@ head
 	<![endif]-->
 	
 body
-#contenedor
-	#bloqueIzq
-		header 
-			h1: a(href="index.html") Pancito donde Panchito
-			h2 Este es el sitio web de la gran pasteleria pancito donde panchito
-			nav
-				ul
-					- var values = ['in', 'preparaciones', 'eventos', 'galeria', 'locales', 'contacto']
-					each val,index in ['Inicio', 'Preparaciones', 'Eventos', 'Galeria de Imagenes', 'Nuestros locales', 'Contacto']
-						li: a(href=values[index]+'.html')= val
-			aside
-				#pedidos Haga su pedido al 
-					span +(52) 981 81 300 00
-	//fin de bloqueIzq	
-	#bloqueDer
-		section#destacado
-			article
-				img(src='img/imgDestacada.jpg' alt='Panacito donde Panchito')
-				p.titulo Pancito donde Panchito
-				p.subtitulo Las mejores preparaciones en pasteleria de todo Mexico
-		// fin de destacado
-		section#testimonioHome
-			article
-				img(src='img/autorTestimonio.jpg' alt='Ricardo Martin Changoleon')
-				blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet consequuntur perspiciatis deleniti error aspernatur quae, modi consectetur temporibus repellendus? Aperiam voluptate beatae consequuntur dolores et perferendis illum quod repellat architecto.
-				p Ricardo Martin Changoleon / Revista el Tremendo Gourmet
-		// fin de testimonio
-		section#preparacionHome
-			- var n = 0
-			while n++ < 3
-				article.col3
-					p.subtitulo Preparacion #{n}
-					img(src='img/preparacion'+ n + '.jpg' alt='Preparacion' + n)
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestias, doloribus quo architecto dolore voluptas doloremque. 
-					a(href='#') Ver más
-		//fin de preparaciones destacadas
-		footer 
-			.logoFooter
-				img(scr='img/logoFooter.png' alt='Pancitos donde Panchito')
-			.copyRight
-				p Sitio Web diseñado y desarrollado por 
-					a(href='https://www.google.com.mx' target='_blank') MAC Estudio.
+	img#fotoFondo(src="img/foto-fondo.png", alt="Pancito donde Panchito")
+	#contenedor
+		#bloqueIzq
+			header 
+				h1: a(href="index.html") Pancito donde Panchito
+				h2 Este es el sitio web de la gran pasteleria pancito donde panchito
+				nav
+					ul
+						- var values = ['index', 'preparaciones', 'eventos', 'galeria', 'locales', 'contacto']
+						each val,index in ['Inicio', 'Preparaciones', 'Eventos', 'Galeria de Imagenes', 'Nuestros locales', 'Contacto']
+							li: a(href=values[index]+'.html')= val
+				aside
+					#pedidos Haga su pedido al 
+						span +(52) 981 81 300 00
+		//fin de bloqueIzq	
+		#bloqueDer
+			section#destacado
+				article
+					img(src='img/imgDestacada.jpg' alt='Panacito donde Panchito')
+					p.titulo Pancito donde Panchito
+					p.subtitulo Las mejores preparaciones en pasteleria de todo Mexico
+			// fin de destacado
+			section#testimonioHome
+				article
+					img(src='img/autorTestimonio.jpg' alt='Ricardo Martin Changoleon')
+					blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet consequuntur perspiciatis deleniti error aspernatur quae, modi consectetur temporibus repellendus? Aperiam voluptate beatae consequuntur dolores et perferendis illum quod repellat architecto.
+					p Ricardo Martin Changoleon / Revista el Tremendo Gourmet
+			// fin de testimonio
+			section#preparacionHome
+				- var n = 0
+				while n++ < 3
+					article.col3
+						p.subtitulo Preparacion #{n}
+						img(src='img/preparacion'+ n + '.jpg' alt='Preparacion' + n)
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestias, doloribus quo architecto dolore voluptas doloremque. 
+						a(href='#') Ver más
+			//fin de preparaciones destacadas
+			footer 
+				.logoFooter
+					img(scr='img/logoFooter.png' alt='Pancitos donde Panchito')
+				.copyRight
+					p Sitio Web diseñado y desarrollado por 
+						a(href='https://www.google.com.mx' target='_blank') MAC Estudio.
 
-		// fin de footer
-	//fin de bloqueDer			
+			// fin de footer
+		//fin de bloqueDer			
 
 
 
