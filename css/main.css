@@ -1,6 +1,7 @@
-/* Reset */
+@import url "http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic";
 * {
   border: none;
+  font-size: 100%;
   list-style: none;
   margin: 0;
   outline: none;
@@ -19,8 +20,44 @@ article,
 img {
   display: block;
 }
+a {
+  color: #b11d1d;
+}
+a:hover {
+  text-decoration: underline;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.titulo,
+.subtitulo {
+  color: #b11d1d;
+  font-style: italic;
+  font-weight: 700;
+}
+h1,
+.titulo {
+  font-size: 3.7rem;
+}
+h2,
+.subtitulo {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
 body {
-  background: url("../img/textura.jpg");
+  background: #e2cb95 url("../img/textura.jpg");
+  color: #4c2f04;
+  font-family: 'PT Serif', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 #fotoFondo {
   left: 0;
@@ -30,6 +67,8 @@ body {
   z-index: 0;
 }
 #contenedor {
+  margin: 0 auto;
+  max-width: 960px;
   position: relative;
   z-index: 1;
 }

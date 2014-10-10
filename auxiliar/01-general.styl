@@ -1,0 +1,57 @@
+// variables
+colFondo = #E2CB95
+colTexto = #4C2F04
+colH = #B11D1D
+
+
+/* Reset */
+*
+  border none
+  font-size 100%
+  list-style none
+  margin 0
+  outline none
+  padding 0
+  text-decoration none
+  &:focus
+    outline none
+header, aside, section, nav, footer, article, img
+  display block
+
+/* estilos generales*/
+
+a
+  color colH
+  &:hover
+    text-decoration underline
+html
+  font-size 62.5%
+h1, h2, h3, h4, h5 , h6, .titulo, .subtitulo
+  color colH
+  font-style italic
+  font-weight 700
+h1, .titulo
+  font-size 3.7rem
+h2, .subtitulo
+  font-size 2.2rem
+h3
+  font-size 1.7rem
+  
+/* estilos del documento*/
+body
+  background colFondo url(../img/textura.jpg)
+  color colTexto
+  font-family 'PT Serif', serif
+  font-size 1.3rem
+  font-weight 400
+#fotoFondo
+  left 0
+  position fixed
+  top 0
+  width 100%
+  z-index 0
+#contenedor
+  margin 0 auto
+  max-width 960px
+  position relative
+  z-index 1

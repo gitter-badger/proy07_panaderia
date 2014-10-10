@@ -6,6 +6,7 @@ head
 	meta(name="keywords" content="pasteleria, panaderia, pasteles")
 	title Pancito donde Panchito
 	//link(rel="stylesheet" href="css/normalize.css")
+	//link(href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css')
 	link(rel="stylesheet" href="css/main.css")
 	
 	<!--[if (gt IE 6) & (lte IE 8)]>
@@ -24,9 +25,9 @@ body
 						- var values = ['index', 'preparaciones', 'eventos', 'galeria', 'locales', 'contacto']
 						each val,index in ['Inicio', 'Preparaciones', 'Eventos', 'Galeria de Imagenes', 'Nuestros locales', 'Contacto']
 							li: a(href=values[index]+'.html')= val
-				aside
-					#pedidos Haga su pedido al 
-						span +(52) 981 81 300 00
+			aside
+				#pedidos Haga su pedido al 
+					span +(52) 981 81 300 00
 		//fin de bloqueIzq	
 		#bloqueDer
 			section#destacado
@@ -45,7 +46,7 @@ body
 				- var n = 0
 				while n++ < 3
 					article.col3
-						p.subtitulo Preparacion #{n}
+						h3 Preparacion #{n}
 						img(src='img/preparacion'+ n + '.jpg' alt='Preparacion' + n)
 						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestias, doloribus quo architecto dolore voluptas doloremque. 
 						a(href='#') Ver más
