@@ -1,4 +1,4 @@
-@import url "http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic";
+@import url "@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic";
 * {
   border: none;
   font-size: 100%;
@@ -71,4 +71,33 @@ body {
   max-width: 960px;
   position: relative;
   z-index: 1;
+}
+#bloqueDer,
+#bloqueIzq {
+  display: inline-block;
+}
+#bloqueIzq {
+  background: #008000;
+  vertical-align: top;
+  width: 250px;
+}
+#bloqueDer {
+  background: #808080;
+  width: 70%;
+}
+#bloqueIzq header {
+  background: #f6f2ec url("../img/bgHeader.jpg");
+  border-top: 6px solid #b11d1d;
+  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  padding: 30px 20px;
+}
+#bloqueIzq header h1 > span,
+#bloqueIzq header h2 {
+  display: none;
+}
+#bloqueIzq header h1 > a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin-left: 21px;
 }
