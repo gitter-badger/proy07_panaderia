@@ -28,7 +28,9 @@ body
 					ul
 						- var values = ['index', 'preparaciones', 'eventos', 'galeria', 'locales', 'contacto']
 						each val,index in ['Inicio', 'Preparaciones', 'Eventos', 'Galeria de Imagenes', 'Nuestros locales', 'Contacto']
+							div
 							li: a(href=values[index]+'.html')= val
+						div
 			aside
 				#pedidos Haga su pedido al 
 					span +(52) 981 81 300 00

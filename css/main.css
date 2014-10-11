@@ -101,3 +101,15 @@ body {
   text-align: center;
   margin-left: 21px;
 }
+#bloqueIzq nav {
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#bloqueIzq nav a {
+  color: #4c2f04;
+}
+#bloqueIzq nav div {
+  height: 2px;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 3%, #4c2f04 40%, #4c2f04 59%, rgba(255,255,255,0) 98%);
+}
