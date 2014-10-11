@@ -1,12 +1,27 @@
+
 #bloqueIzq
+	aside
+		#pedidos
+			span
+				display block
+				font-size 20px
+
+		background colH
+		//box-shadow 0px 0px 10px 0px rgba(white 0.75)
+		color white
+		line-height 2.6rem
+		margin 0 6px
+		padding-top 25px
+		text-align center
 	header
 		h1 > span, h2
 				display none
+
 		h1 > a
-			display block
 			color white
-			text-align center
+			display block
 			margin-left 21px
+			text-align center
 
 		background col-bgHeader url(../img/bgHeader.jpg)
 		border-top 6px solid colH
@@ -15,12 +30,29 @@
 	
 	nav
 		
-		a
-			color colTexto
-		div
-			height 2px
 		
+		div
 			background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%, rgba(255,255,255,.0) 3%, rgba(76,47,4,1) 40%, rgba(76,47,4,1) 59%, rgba(255,255,255,.0) 98%)
+			height 2px
+		ul 
+			li 
+				a
+					&:hover
+						color colH
+						text-decoration none
+
+					color colTexto
+					display block
+					padding 8px
+					transition color 0.4s linear
+				.actual
+					color colH
+					background linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(219,219,219,.75) 26%, rgba(209,209,209,.75) 49%, rgba(209,209,209,.75) 76%, rgba(255,255,255,0) 100%)
+			
+					
+
+					
+
 		margin-top 25px
 		text-align center
 		text-transform uppercase

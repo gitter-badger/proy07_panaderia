@@ -1,6 +1,5 @@
 cd C:\xampp\htdocs\proyectos\proy07_panaderia\auxiliar
-
 jade -P -w -o C:\xampp\htdocs\proyectos\proy07_panaderia index.jade 
 
-cd C:\xampp\htdocs\proyectos\proy07_panaderia\auxiliar
+cd C:\xampp\htdocs\proyectos\proy07_panaderia\auxiliar 
 stylus -w -o C:\xampp\htdocs\proyectos\proy07_panaderia\css main.styl

@@ -29,11 +29,15 @@ body
 						- var values = ['index', 'preparaciones', 'eventos', 'galeria', 'locales', 'contacto']
 						each val,index in ['Inicio', 'Preparaciones', 'Eventos', 'Galeria de Imagenes', 'Nuestros locales', 'Contacto']
 							div
-							li: a(href=values[index]+'.html')= val
+							if val == 'Inicio'
+								li: a.actual(href=values[index]+'.html')= val
+							else
+								li: a(href=values[index]+'.html')= val
 						div
 			aside
-				#pedidos Haga su pedido al 
+				#pedidos Haga su pedido al
 					span +(52) 981 81 300 00
+			.stola
 		//fin de bloqueIzq	
 		#bloqueDer
 			section#destacado

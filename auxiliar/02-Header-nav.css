@@ -1,0 +1,51 @@
+#bloqueIzq aside {
+  background: colH;
+  color: #fff;
+  line-height: 2.6rem;
+  margin: 0 6px;
+  padding: 25px 0;
+  text-align: center;
+}
+#bloqueIzq aside #pedidos span {
+  display: block;
+  font-size: 20px;
+}
+#bloqueIzq header {
+  background: col-bgHeader url("../img/bgHeader.jpg");
+  border-top: 6px solid colH;
+  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  padding: 30px 20px;
+}
+#bloqueIzq header h1 > span,
+#bloqueIzq header h2 {
+  display: none;
+}
+#bloqueIzq header h1 > a {
+  color: #fff;
+  display: block;
+  margin-left: 21px;
+  text-align: center;
+}
+#bloqueIzq nav {
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#bloqueIzq nav div {
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 3%, #4c2f04 40%, #4c2f04 59%, rgba(255,255,255,0) 98%);
+  height: 2px;
+}
+#bloqueIzq nav ul li a {
+  color: colTexto;
+  display: block;
+  padding: 8px;
+  transition: color 0.4s linear;
+}
+#bloqueIzq nav ul li a:hover {
+  color: colH;
+  text-decoration: none;
+}
+#bloqueIzq nav ul li .actual {
+  color: colH;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(219,219,219,0.75) 26%, rgba(209,209,209,0.75) 49%, rgba(209,209,209,0.75) 76%, rgba(255,255,255,0) 100%);
+}
