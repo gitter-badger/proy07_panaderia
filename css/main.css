@@ -1,7 +1,8 @@
 @import url "@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic";
 * {
   border: none;
-  font-size: 100%;
+  font-size: 1.3rem;
+  ine-height: 1.5rem;
   list-style: none;
   margin: 0;
   outline: none;
@@ -64,7 +65,7 @@ body {
   background: #e2cb95 url("../img/textura.jpg");
   color: #4c2f04;
   font-family: 'PT Serif', serif;
-  font-size: 1.3rem;
+  font-size: 130%;
   font-weight: 400;
 }
 #fotoFondo {
@@ -85,11 +86,11 @@ body {
   display: inline-block;
 }
 #bloqueIzq {
+  margin-right: 20px;
   vertical-align: top;
   width: 250px;
 }
 #bloqueDer {
-  background: #808080;
   width: 70%;
 }
 #bloqueIzq aside {
@@ -98,6 +99,7 @@ body {
   line-height: 2.6rem;
   margin: 0 6px;
   padding-top: 25px;
+  position: relative;
   text-align: center;
 }
 #bloqueIzq aside #pedidos span {
@@ -109,6 +111,8 @@ body {
   border-top: 6px solid #b11d1d;
   box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
   padding: 30px 20px;
+  position: relative;
+  z-index: 2;
 }
 #bloqueIzq header h1 > span,
 #bloqueIzq header h2 {
@@ -142,4 +146,64 @@ body {
 #bloqueIzq nav ul li .actual {
   color: #b11d1d;
   background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(219,219,219,0.75) 26%, rgba(209,209,209,0.75) 49%, rgba(209,209,209,0.75) 76%, rgba(255,255,255,0) 100%);
+}
+#bloqueDer #contenido {
+  background: rgba(240,240,240,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-bottom: 7rem;
+}
+#bloqueDer #contenido #destacado article {
+  background: url("../img/imgDestacada.jpg") no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 406px;
+  padding-top: 10px;
+  position: relative;
+}
+#bloqueDer #contenido #destacado article div {
+  border-left: 25px solid #b11d1d;
+  padding-left: 15px;
+  position: relative;
+  positon: absolut;
+  top: 40px;
+}
+#bloqueDer #contenido #destacado article div p {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+#bloqueDer #contenido #testimonioHome {
+  background: rgba(198,162,117,0.5);
+  padding: 30px 25px;
+}
+#bloqueDer #contenido #testimonioHome article div,
+#bloqueDer #contenido #testimonioHome article img {
+  display: inline-block;
+}
+#bloqueDer #contenido #testimonioHome article div {
+  margin-left: 1rem;
+  max-width: 85%;
+  text-align: justify;
+  vertical-align: top;
+}
+#bloqueDer #contenido #testimonioHome article div blockquote {
+  border-bottom: 1px solid #5b4a31;
+  color: #5b4a31;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 2.2rem;
+  padding-bottom: 1rem;
+  text-shadow: 1px 1px rgba(255,255,255,0.5);
+}
+#bloqueDer #contenido #testimonioHome article div p {
+  border-top: 1px solid #ebddcb;
+  color: #5b4a31;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+#bloqueDer #contenido #testimonioHome article img {
+  width: 70px;
+  border: 3px solid #fff;
 }
