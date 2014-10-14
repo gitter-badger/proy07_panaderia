@@ -152,7 +152,6 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding-bottom: 7rem;
 }
 #bloqueDer #contenido #destacado article {
   background: url("../img/imgDestacada.jpg") no-repeat center;
@@ -206,4 +205,47 @@ body {
 #bloqueDer #contenido #testimonioHome article img {
   width: 70px;
   border: 3px solid #fff;
+}
+#bloqueDer #contenido #preparacionHome {
+  padding: 25px 0px;
+}
+#bloqueDer #contenido #preparacionHome article {
+  display: inline-block;
+  width: 30%;
+  margin-left: 1.3rem;
+  text-shadow: 0 1px 0 #fff;
+}
+#bloqueDer #contenido #preparacionHome article a {
+  font-weight: 700;
+}
+#bloqueDer #contenido #preparacionHome article a:after {
+  content: "\00BB";
+}
+#bloqueDer #contenido #preparacionHome article img {
+  border: 2px solid #fff;
+  width: 100%;
+  margin: 1rem 0;
+}
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+footer > a {
+  margin-left: 2rem;
+  display: inline-block;
+}
+footer > a img {
+  width: 160px;
+}
+footer div {
+  font-weight: 700;
+  font-style: italic;
+  color: #000;
+  line-height: 2rem;
+  margin-left: 5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+footer div p:last-child:before {
+  content: "\00A9";
 }

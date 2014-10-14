@@ -1,0 +1,74 @@
+#bloqueDer #contenido {
+  background: rgba(240,240,240,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#bloqueDer #contenido #destacado article {
+  background: url("../img/imgDestacada.jpg") no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 406px;
+  padding-top: 10px;
+  position: relative;
+}
+#bloqueDer #contenido #destacado article div {
+  border-left: 25px solid colH;
+  padding-left: 15px;
+  position: relative;
+  positon: absolut;
+  top: 40px;
+}
+#bloqueDer #contenido #destacado article div p {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+#bloqueDer #contenido #testimonioHome {
+  background: rgba(198,162,117,0.5);
+  padding: 30px 25px;
+}
+#bloqueDer #contenido #testimonioHome article div,
+#bloqueDer #contenido #testimonioHome article img {
+  display: inline-block;
+}
+#bloqueDer #contenido #testimonioHome article div {
+  margin-left: 1rem;
+  max-width: 85%;
+  text-align: justify;
+  vertical-align: top;
+}
+#bloqueDer #contenido #testimonioHome article div blockquote {
+  border-bottom: 1px solid #5b4a31;
+  color: #5b4a31;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 2.2rem;
+  padding-bottom: 1rem;
+  text-shadow: 1px 1px rgba(255,255,255,0.5);
+}
+#bloqueDer #contenido #testimonioHome article div p {
+  border-top: 1px solid #ebddcb;
+  color: #5b4a31;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+#bloqueDer #contenido #testimonioHome article img {
+  width: 70px;
+  border: 3px solid #fff;
+}
+#bloqueDer #contenido #preparacionHome {
+  padding: 25px 0px;
+}
+#bloqueDer #contenido #preparacionHome article {
+  display: inline-block;
+  width: 30%;
+  margin-left: 1.3rem;
+}
+#bloqueDer #contenido #preparacionHome article a:after {
+  content: "\";
+}
+#bloqueDer #contenido #preparacionHome article img {
+  width: 100%;
+  margin: 1rem 0;
+}

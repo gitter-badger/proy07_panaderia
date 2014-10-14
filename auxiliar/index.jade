@@ -41,7 +41,6 @@ body
 			#contenido
 				section#destacado
 					article
-						//img(src='img/imgDestacada.jpg' alt='Panacito donde Panchito')
 						div
 							p.titulo Pancito donde Panchito
 							p.subtitulo Las mejores preparaciones en pasteleria de todo Mexico
@@ -56,19 +55,19 @@ body
 				section#preparacionHome
 					- var n = 0
 					while n++ < 3
-						article.col3
+						article
 							h3 Preparacion #{n}
 							img(src='img/preparacion'+ n + '.jpg' alt='Preparacion' + n)
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga molestias, doloribus quo architecto dolore voluptas doloremque. 
-							a(href='#') Ver más
+							a(href='#') Ver más 
 				//fin de preparaciones destacadas
 			// fin de contenido
 			footer 
-				.logoFooter
-					img(scr='img/logoFooter.png' alt='Pancitos donde Panchito')
-				.copyRight
+				a(href="index.html"): img(src='img/logo-footer.png' alt='Pancitos donde Panchito')
+				div
 					p Sitio Web diseñado y desarrollado por 
 						a(href='https://www.google.com.mx' target='_blank') MAC Estudio.
+					p  2010-2014 Pancitos donde Panchito
 
 			// fin de footer
 		//fin de bloqueDer			
