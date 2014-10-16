@@ -81,10 +81,14 @@ body {
   position: relative;
   z-index: 1;
 }
+#bloqueDer{
+  display: none;
+}
 #bloqueDer,
 #bloqueIzq {
   display: inline-block;
 }
+
 #bloqueIzq {
   margin-right: 20px;
   vertical-align: top;
@@ -147,6 +151,7 @@ body {
   color: #b11d1d;
   background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(219,219,219,0.75) 26%, rgba(209,209,209,0.75) 49%, rgba(209,209,209,0.75) 76%, rgba(255,255,255,0) 100%);
 }
+
 #bloqueDer #contenido {
   background: rgba(240,240,240,0.5);
   box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
