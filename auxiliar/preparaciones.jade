@@ -1,4 +1,22 @@
 //- preparaciones.jade
 extends includes/base.jade	
 block deContenido
-  h1 Preparaciones
+	#contenido.pagina-interna
+		section
+			header
+				img(src='img/preparacion-destacada.jpg' alt='preparaciones')
+				.sombra
+				.leyenda
+					p.titulo Nuestras Preparaciones
+					p.subtitulo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit deserunt quos at, eius quis ratione nihil error est, numquam temporibus doloremque recusandae, praesentium eligendi dolore tenetur itaque dignissimos! Nesciunt, velit.
+			section#body-preparaciones
+				each val in [1, 2, 3, 4]
+					article
+						img(src='img/preparaciones'+ val + '.jpg' alt='preparaciones' + val)
+						h3 Preparaciones #{val}
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consequatur aut quidem, dolores a nam, nemo eum beatae voluptatum iste corporis aliquid harum esse possimus molestiae maiores delectus fugit distinctio?
+						br
+						p Aperiam sapiente, ad soluta consequuntur, molestias maxime dolores veritatis odit ipsa voluptatem illum magnam in. Rem asperiores, eius?
+					if val != 4
+						hr 
+	//fin de contenido

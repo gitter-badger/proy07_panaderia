@@ -1,8 +1,7 @@
 @import url "@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic";
 * {
-  border: none;
   font-size: 1.3rem;
-  ine-height: 1.5rem;
+  line-height: 1.5rem;
   list-style: none;
   margin: 0;
   outline: none;
@@ -81,14 +80,10 @@ body {
   position: relative;
   z-index: 1;
 }
-#bloqueDer{
-  display: none;
-}
 #bloqueDer,
 #bloqueIzq {
   display: inline-block;
 }
-
 #bloqueIzq {
   margin-right: 20px;
   vertical-align: top;
@@ -151,7 +146,6 @@ body {
   color: #b11d1d;
   background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(219,219,219,0.75) 26%, rgba(209,209,209,0.75) 49%, rgba(209,209,209,0.75) 76%, rgba(255,255,255,0) 100%);
 }
-
 #bloqueDer #contenido {
   background: rgba(240,240,240,0.5);
   box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
@@ -169,13 +163,16 @@ body {
 #bloqueDer #contenido #destacado article div {
   border-left: 25px solid #b11d1d;
   padding-left: 15px;
-  position: relative;
-  positon: absolut;
+  position: absolute;
   top: 40px;
 }
 #bloqueDer #contenido #destacado article div p {
+  line-height: 2rem;
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+#bloqueDer #contenido #destacado article div p:last-child {
+  margin-top: 1.5rem;
 }
 #bloqueDer #contenido #testimonioHome {
   background: rgba(198,162,117,0.5);
@@ -227,9 +224,65 @@ body {
   content: "\00BB";
 }
 #bloqueDer #contenido #preparacionHome article img {
-  border: 2px solid #fff;
   width: 100%;
   margin: 1rem 0;
+}
+#bloqueDer .pagina-interna {
+  text-shadow: 0 1px 0 #fff;
+  border-top: solid 6px #b11d1d;
+}
+#bloqueDer .pagina-interna hr {
+  width: 100%;
+  margin: 3rem 0;
+  height: 1px;
+  border-bottom: solid 1px 7 d7160;
+}
+#bloqueDer .pagina-interna img {
+  border: solid 3px #fff;
+}
+#bloqueDer .pagina-interna section header img {
+  width: 100%;
+  border: none;
+}
+#bloqueDer .pagina-interna section header .sombra {
+  height: 7px;
+  background: #b11d1d;
+  box-shadow: inset 0px 3px 5px 0px rgba(0,0,0,0.65);
+}
+#bloqueDer .pagina-interna section header .leyenda {
+  background: #b11d1d;
+  margin-bottom: 4.5rem;
+  padding: 25px 25px 35px 25px;
+}
+#bloqueDer .pagina-interna section header .leyenda .titulo,
+#bloqueDer .pagina-interna section header .leyenda .subtitulo {
+  color: #fff;
+  text-shadow: 0 1px 0 #7d1414;
+}
+#bloqueDer .pagina-interna section header .leyenda .titulo {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+#bloqueDer .pagina-interna section header .leyenda .subtitulo {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+}
+#bloqueDer .pagina-interna section #body-preparaciones {
+  padding: 0 2.5rem;
+}
+#bloqueDer .pagina-interna section #body-preparaciones article {
+  overflow: hidden;
+}
+#bloqueDer .pagina-interna section #body-preparaciones article:last-child img {
+  margin-bottom: 3rem;
+}
+#bloqueDer .pagina-interna section #body-preparaciones article h3 {
+  margin-bottom: 1rem;
+}
+#bloqueDer .pagina-interna section #body-preparaciones img {
+  margin-right: 2rem;
+  float: left;
 }
 footer {
   margin-top: 2rem;
