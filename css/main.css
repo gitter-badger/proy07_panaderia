@@ -251,7 +251,7 @@ body {
 }
 #bloqueDer .pagina-interna section header .leyenda {
   background: #b11d1d;
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.5rem;
   padding: 25px 25px 35px 25px;
 }
 #bloqueDer .pagina-interna section header .leyenda .titulo,
@@ -268,21 +268,53 @@ body {
   font-style: normal;
   font-weight: normal;
 }
-#bloqueDer .pagina-interna section #body-preparaciones {
-  padding: 0 2.5rem;
-}
-#bloqueDer .pagina-interna section #body-preparaciones article {
-  overflow: hidden;
-}
 #bloqueDer .pagina-interna section #body-preparaciones article:last-child img {
   margin-bottom: 3rem;
 }
 #bloqueDer .pagina-interna section #body-preparaciones article h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 #bloqueDer .pagina-interna section #body-preparaciones img {
-  margin-right: 2rem;
   float: left;
+}
+#bloqueDer .pagina-interna section #body-eventos article:last-child p:last-child {
+  margin-bottom: 3rem;
+}
+#bloqueDer .pagina-interna section #body-eventos article h3 {
+  margin: 1.5em 0;
+}
+#bloqueDer .pagina-interna section #body-eventos img {
+  width: 99%;
+}
+#bloqueDer .pagina-interna section #body-galeria figure {
+  padding-bottom: 3rem;
+}
+#bloqueDer .pagina-interna section #body-galeria figure img {
+  width: 29%;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: all 0.5s;
+}
+#bloqueDer .pagina-interna section #body-galeria figure img:nth-child(3n) {
+  margin-left: 0;
+}
+#bloqueDer .pagina-interna section #body-galeria figure img:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  border-color: #7d7160;
+}
+#bloqueDer .pagina-interna section #body-locales iframe {
+  border: 3px solid #fff;
+  margin-bottom: 3rem;
+}
+#bloqueDer .pagina-interna section .body-gral {
+  padding: 0 2.5rem;
+}
+#bloqueDer .pagina-interna section article {
+  overflow: hidden;
+}
+#bloqueDer .pagina-interna section img {
+  margin-right: 2rem;
 }
 footer {
   margin-top: 2rem;

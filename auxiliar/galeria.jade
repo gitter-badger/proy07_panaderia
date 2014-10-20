@@ -1,0 +1,17 @@
+//- galeria.jade
+extends includes/base.jade	
+block deContenido
+	#contenido.pagina-interna
+		section
+			header
+				img(src='img/galeria-destacada.jpg' alt='galeria de imagenes')
+				.sombra
+				.leyenda
+					p.titulo Galeria de Imagenes
+					p.subtitulo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit deserunt quos at, eius quis ratione nihil error est, numquam temporibus doloremque recusandae, praesentium eligendi dolore tenetur itaque dignissimos! Nesciunt, velit.
+			section.body-gral#body-galeria
+				figure
+					-var i = 0
+					while (i++ < 12)
+						img(src='img/galeria'+ i + '.jpg' alt= 'galeria'+ i)
+	//fin de contenido

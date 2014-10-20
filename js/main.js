@@ -5,28 +5,37 @@ function main(){
 	var strPagina = "";
  
  $("#bloqueDer").css("display", "none");  
-  $("#bloqueDer").fadeIn(500);
+  $("#bloqueDer").fadeIn(250);
 
 	$("nav ul a").click(function(event){
        event.preventDefault();
 	 	linkLocation = this.href
 	 	if (linkLocation != window.location) 
-	 		$("#bloqueDer").fadeOut(500,redirectPage);
+	 		$("#bloqueDer").fadeOut(250,redirectPage);
     });
 	
 	strPagina = nombrePagina(location.pathname);
 	
 	switch (strPagina){
 		case "index.html":  
-			$('#itemInicio').addClass('actual');
+			$("#item-index").addClass('actual');
 			break;
 		case "preparaciones.html" :
-			$('#itemPreparaciones').addClass('actual');
+			$('#item-preparaciones').addClass('actual');
 			break;
 		case "eventos.html" :
-			$('#itemEventos').addClass('actual');
+			$('#item-eventos').addClass('actual');
 			break;
-		default : $('#itemInicio').addClass('actual');
+		case "galeria.html" :
+			$('#item-galeria').addClass('actual');
+			break;
+		case "locales.html" :
+			$('#item-locales').addClass('actual');
+			break;
+		case "contacto.html" :
+			$('#item-contacto').addClass('actual');
+			break;
+		default : $("#item-index").addClass('actual');
 	}
 
 } //fin de main

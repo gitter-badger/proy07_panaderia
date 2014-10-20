@@ -1,4 +1,22 @@
-//- eventos.jade
+//- evetos.jade
 extends includes/base.jade	
 block deContenido
-  h1 Eventos
+	#contenido.pagina-interna
+		section
+			header
+				img(src='img/evento-destacado.jpg' alt='eventos')
+				.sombra
+				.leyenda
+					p.titulo Eventos
+					p.subtitulo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit deserunt quos at, eius quis ratione nihil error est, numquam temporibus doloremque recusandae, praesentium eligendi dolore tenetur itaque dignissimos! Nesciunt, velit.
+			section.body-gral#body-eventos
+				each val, index in ['Cumpleaños y Aniversarios', 'Matrimonios y eventos religiososo', 'Eventos Sociales']
+					article
+						img(src='img/eventos'+ (index + 1) + '.jpg' alt= val)
+						h3 #{val}
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consequatur aut quidem, dolores a nam, nemo eum beatae voluptatum iste corporis aliquid harum esse possimus molestiae maiores delectus fugit distinctio?
+						br
+						p Aperiam sapiente, ad soluta consequuntur, molestias maxime dolores veritatis odit ipsa voluptatem illum magnam in. Rem asperiores, eius?
+					if  index != 2
+						hr 
+	//fin de contenido
