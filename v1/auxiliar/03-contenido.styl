@@ -140,28 +140,62 @@ colContenido = #F0F0F0
 				figure
 					padding-bottom 3rem
 					img
-						width 29%
 						display inline-block
 						margin-bottom 1.5rem
 						transition all .5s
+						width 29%
 						&:nth-child(3n)
 							margin-left 0
 						&:hover
+							border-color #7d7160
 							cursor pointer
 							transform:scale(1.1,1.1);
-							border-color #7d7160
 
 			#body-locales
 				iframe
 					border 3px solid white	
-					margin-bottom:  3rem
-							
+					margin-bottom  3rem
 
+			#body-contacto
+				form
+					padding-bottom 3rem
+					label
+						margin 1.5rem 0
+						display block
+					div
+						width 29%
+						display inline-block
+						margin-right 3rem
+						&:nth-child(3)
+							margin-right 0
+					input, textarea
+						border 2px solid #c4b8a6
+						padding 1rem
+						transition border .5s linear
+						&:focus
+							border 2px solid #4c2f04
+					input
+						
+						width 100%	
+					textarea
+						width 99%
+						height 12rem
+						margin-bottom 1.5rem
+					#btn-submit
+						background colH
+						border none
+						color white
+						font-family 'PT Serif', serif 
+						font-weight bold
+						padding 1rem 4rem
+						text-transform uppercase
+						transition background-color .5s linear
+						width auto
+						&:hover
+							background #680707
+							cursor pointer
 				
-			
-				
-				
-
+		
 			.body-gral
 					padding 0 2.5rem
 				article

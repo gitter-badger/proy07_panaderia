@@ -290,22 +290,70 @@ body {
   padding-bottom: 3rem;
 }
 #bloqueDer .pagina-interna section #body-galeria figure img {
-  width: 29%;
   display: inline-block;
   margin-bottom: 1.5rem;
   transition: all 0.5s;
+  width: 29%;
 }
 #bloqueDer .pagina-interna section #body-galeria figure img:nth-child(3n) {
   margin-left: 0;
 }
 #bloqueDer .pagina-interna section #body-galeria figure img:hover {
+  border-color: #7d7160;
   cursor: pointer;
   transform: scale(1.1, 1.1);
-  border-color: #7d7160;
 }
 #bloqueDer .pagina-interna section #body-locales iframe {
   border: 3px solid #fff;
   margin-bottom: 3rem;
+}
+#bloqueDer .pagina-interna section #body-contacto form {
+  padding-bottom: 3rem;
+}
+#bloqueDer .pagina-interna section #body-contacto form label {
+  margin: 1.5rem 0;
+  display: block;
+}
+#bloqueDer .pagina-interna section #body-contacto form div {
+  width: 29%;
+  display: inline-block;
+  margin-right: 3rem;
+}
+#bloqueDer .pagina-interna section #body-contacto form div:nth-child(3) {
+  margin-right: 0;
+}
+#bloqueDer .pagina-interna section #body-contacto form input,
+#bloqueDer .pagina-interna section #body-contacto form textarea {
+  border: 2px solid #c4b8a6;
+  padding: 1rem;
+  transition: border 0.5s linear;
+}
+#bloqueDer .pagina-interna section #body-contacto form input:focus,
+#bloqueDer .pagina-interna section #body-contacto form textarea:focus {
+  border: 2px solid #4c2f04;
+}
+#bloqueDer .pagina-interna section #body-contacto form input {
+  width: 100%;
+}
+#bloqueDer .pagina-interna section #body-contacto form textarea {
+  width: 99%;
+  height: 12rem;
+  margin-bottom: 1.5rem;
+}
+#bloqueDer .pagina-interna section #body-contacto form #btn-submit {
+  background: #b11d1d;
+  border: none;
+  color: #fff;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  text-transform: uppercase;
+  transition: background-color 0.5s linear;
+  width: auto;
+}
+#bloqueDer .pagina-interna section #body-contacto form #btn-submit:hover {
+  background: #680707;
+  cursor: pointer;
 }
 #bloqueDer .pagina-interna section .body-gral {
   padding: 0 2.5rem;

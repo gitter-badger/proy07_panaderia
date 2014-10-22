@@ -13,6 +13,9 @@ jade -P -w -o C:\xampp\htdocs\proyectos\proy07_panaderia galeria.jade
 cd C:\xampp\htdocs\proyectos\proy07_panaderia\auxiliar
 jade -P -w -o C:\xampp\htdocs\proyectos\proy07_panaderia locales.jade
 
+cd C:\xampp\htdocs\proyectos\proy07_panaderia\auxiliar
+jade -P -w -o C:\xampp\htdocs\proyectos\proy07_panaderia contacto.jade
+
 
 
 cd C:\xampp\htdocs\proyectos\proy07_panaderia\auxiliar 
