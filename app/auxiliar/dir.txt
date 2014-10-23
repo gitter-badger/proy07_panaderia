@@ -21,6 +21,8 @@ jade -P -w -o C:\xampp\htdocs\proyectos\proy07_panaderia contacto.jade
 cd C:\xampp\htdocs\proyectos\proy07_panaderia\auxiliar
 stylus -w -o C:\xampp\htdocs\proyectos\proy07_panaderia\css main.styl
 
+@echo off
+cd C:\xampp\htdocs\proyectos\proy07_panaderia
 npm install --save-dev gulp
 npm install --save-dev gulp-connect
 npm install --save-dev connect-history-api-fallback
@@ -32,3 +34,5 @@ npm install --save-dev gulp-minify-css
 npm install --save-dev gulp-stylus
 npm install --save-dev nib
 npm install --save-dev gulp-jade
+pause
+exit
