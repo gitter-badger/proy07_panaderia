@@ -1,2 +1,3 @@
-dir_to_ignore/node_modules
-ir_to_ignore/auxiliar
+node_modules/
+auxiliar/
+
