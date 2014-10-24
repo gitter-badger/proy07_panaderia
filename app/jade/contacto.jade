@@ -1,5 +1,5 @@
 //- contacto.jade
-extends includes/base.jade	
+extends base.jade
 block deContenido
 	#contenido.pagina-interna
 		section
@@ -11,21 +11,21 @@ block deContenido
 					p.subtitulo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit deserunt quos at, eius quis ratione nihil error est, numquam temporibus doloremque recusandae, praesentium eligendi dolore tenetur itaque dignissimos! Nesciunt, velit.
 			section.body-gral#body-contacto
 				form(action="")
-					div 
+					div
 						label(for='nombre') Nombre <br/>
 						input#nombre('type'= text name='nombre')
-					div 
+					div
 						label(for='email') Email <br/>
 						input#email('type'= text name='email')
-					div 
+					div
 						label(for='email') Teléfono <br/>
 						input#telefono('type'= text name='telefono')
 					label(for='mensaje') Mensaje <br/>
 					textarea#mensaje(name='mensaje')
 					input#btn-submit(type='submit' value='Enviar')
 
-				
-				
-				
-				
+
+
+
+
 	//fin de contenido
